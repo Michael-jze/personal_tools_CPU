@@ -49,7 +49,7 @@ unsigned int get_cpu_nr(){
     unsigned int cpu_num = 0;
     char buf[1024];
     FILE* fp = fopen("/proc/stat","r");
-    while (fgets(buf. sizeof(buf), fp))
+    while (fgets(buf, sizeof(buf), fp))
     {
         if(0 == strncmp(buf, "cpu", 3)){
             cpu_num++;
@@ -122,7 +122,7 @@ void get_monitor_info(){
                 }
 
                 // 读取/proc/pid/stat
-               
+                // TODO
             }
         }
         
